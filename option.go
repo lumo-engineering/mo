@@ -306,7 +306,7 @@ func (o Option[T]) Value() (driver.Value, error) {
 		return nil, nil
 	}
 
-	return driver.DefaultParameterConverter.ConvertValue(o.value), nil
+	return driver.DefaultParameterConverter.ConvertValue(o.value)
 }
 
 // //////////
